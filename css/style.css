@@ -610,7 +610,7 @@ template {
     background-color: #333333;
   }
   .stars {
-    flex-basis: content;
+    flex-basis: auto;
   }
   .hotel__name {
     flex-basis: 100%;
