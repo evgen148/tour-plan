@@ -6,8 +6,10 @@ var mySwiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
-    
-    
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
   },
   effect: "coverflow",
   
