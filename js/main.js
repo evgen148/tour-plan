@@ -29,3 +29,10 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
   
 })
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function (){
+  document
+  .querySelector(".navbar-bottom")
+  .classList.toggle("navbar-bottom--visible");
+});

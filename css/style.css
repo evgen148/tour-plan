@@ -399,6 +399,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1130,6 +1134,7 @@ template {
   min-width: 160px;
   min-height: 50px;
   padding: 18px;
+  margin-right: 190px;
   margin-bottom: 102px;
   font-style: normal;
   font-weight: bold;
@@ -1300,6 +1305,9 @@ template {
     grid-column: span 5;
     grid-row: 4;
   }
+  .footer__button {
+    margin-right: 300px;
+  }
   .end {
     display: flex;
     align-items: center;
@@ -1326,8 +1334,52 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile_hiden, .navbar__search--mobile_hiden {
     display: none;
+  }
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile_visible {
+    display: block;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
   }
   .menu-button {
     display: flex;
@@ -1345,6 +1397,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .stars {
     flex-basis: auto;
@@ -1427,6 +1484,9 @@ template {
   .footer__input {
     flex-basis: 100%;
   }
+  .footer__button {
+    margin-right: 200px;
+  }
   .end {
     display: flex;
     align-items: center;
@@ -1470,6 +1530,9 @@ template {
   .card {
     width: 100%;
   }
+  .footer {
+    overflow: hidden;
+  }
   .footer-wrapper {
     grid-template-columns: 1fr;
   }
@@ -1498,8 +1561,42 @@ template {
     grid-column: 1;
   }
   .footer__contact-form {
+    width: 350px;
     grid-row: 7;
     grid-column: 1;
+  }
+  .footer__info {
+    margin-bottom: 20px;
+  }
+  .footer__button {
+    margin-bottom: 30px;
+  }
+  .fields {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .end {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 33px;
+    padding-left: 6px;
+  }
+  .end__page {
+    display: flex;
+    justify-content: space-between;
+    width: 283px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+  .end__social {
+    padding-left: 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
