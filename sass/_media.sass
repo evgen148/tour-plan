@@ -164,9 +164,11 @@
       bottom: 0
       top: 78px
       padding-top: 30px
-      &--visible  
+      &--visible 
+        overflow-y: scroll 
         display: block  
   .menu
+    overflow: scroll
     &-button
       display: flex
       width: 16px
@@ -177,7 +179,7 @@
       flex-direction: column
       border: none
       background: #ffffff
-      cursor: pointer
+      cursor: pointer 
       &__line
         width: 16px
         height: 1px
@@ -342,7 +344,15 @@
       margin-right: 15px
       margin-bottom: 5px 
     &__social
-      padding-left: 1px                     
+      padding-left: 1px
+@media (max-width: 370px)
+  .footer
+    &__contact
+      &-details
+        width: 300px
+    &__form
+      width: 280px    
+
 
      
 
