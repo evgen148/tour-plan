@@ -274,7 +274,7 @@
       margin-right: 15px 
     &__social
       padding-left: 137px                               
-@media (max-width: 576px)
+@media (max-width: 576px) 
   .logo
     width: 99px
   .hotel
@@ -345,14 +345,23 @@
       margin-bottom: 5px 
     &__social
       padding-left: 1px
+@media (max-width: 576px) and (orientation: landscape)
+  .modal
+    &__dialog
+      height: 300px
+      overflow-y: scroll
 @media (max-width: 370px)
   .footer
     &__contact
       &-details
         width: 300px
     &__form
-      width: 280px    
-
+      width: 280px
+    &__info
+      margin-left: 20px     
+  .modal
+    &__dialog
+      overflow-y: scroll
 
      
 

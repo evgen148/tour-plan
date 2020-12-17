@@ -35,10 +35,9 @@ img {
 
 .button {
   min-width: 160px;
-  min-height: 50px;
+  height: 50px;
   padding: 18px;
   margin-right: 190px;
-  margin-bottom: 102px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -47,6 +46,10 @@ img {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+}
+
+.scroll-hidden {
+  overflow: hidden;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -607,6 +610,7 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  overflow: hidden;
 }
 
 .hotel-slider__button--next {
@@ -1159,6 +1163,8 @@ template {
   line-height: 15px;
   color: #E0E0E0;
   margin-bottom: 102px;
+  margin-top: 20px;
+  margin-left: 60px;
 }
 
 .end {
@@ -1248,7 +1254,9 @@ template {
 .modal__message {
   width: 100%;
   min-width: 123px;
+  height: 123px;
   margin-bottom: 15px;
+  resize: none;
 }
 
 .modal__info {
@@ -1261,7 +1269,7 @@ template {
 }
 
 .modal__button {
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 .fields {
@@ -1695,12 +1703,25 @@ template {
   }
 }
 
+@media (max-width: 576px) and (orientation: landscape) {
+  .modal__dialog {
+    height: 300px;
+    overflow-y: scroll;
+  }
+}
+
 @media (max-width: 370px) {
   .footer__contact-details {
     width: 300px;
   }
   .footer__form {
     width: 280px;
+  }
+  .footer__info {
+    margin-left: 20px;
+  }
+  .modal__dialog {
+    overflow-y: scroll;
   }
 }
 /*# sourceMappingURL=style.css.map */
